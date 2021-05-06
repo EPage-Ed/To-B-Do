@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		D81F3151264490EB00B27F0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D81F314F264490EB00B27F0A /* Main.storyboard */; };
 		D81F3153264490EF00B27F0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D81F3152264490EF00B27F0A /* Assets.xcassets */; };
 		D81F3156264490EF00B27F0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D81F3154264490EF00B27F0A /* LaunchScreen.storyboard */; };
+		D81F3161264491A000B27F0A /* BrotherB in Frameworks */ = {isa = PBXBuildFile; productRef = D81F3160264491A000B27F0A /* BrotherB */; };
+		D81F3163264491A000B27F0A /* BrotherBSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D81F3162264491A000B27F0A /* BrotherBSwift */; };
+		D81F31682644927F00B27F0A /* SelectPrinterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F31672644927F00B27F0A /* SelectPrinterVC.swift */; };
+		D81F316A2644A42C00B27F0A /* ToDoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D81F31692644A42C00B27F0A /* ToDoView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,11 @@
 		D81F3152264490EF00B27F0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D81F3155264490EF00B27F0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D81F3157264490EF00B27F0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D81F315D2644918C00B27F0A /* BrotherBSwift */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BrotherBSwift; path = ../../../BrotherSP/BrotherBSwift; sourceTree = "<group>"; };
+		D81F315E2644918D00B27F0A /* BrotherB */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BrotherB; path = ../../../BrotherSP/BrotherB; sourceTree = "<group>"; };
+		D81F3164264491B600B27F0A /* To-B-Do-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "To-B-Do-Bridging-Header.h"; sourceTree = "<group>"; };
+		D81F31672644927F00B27F0A /* SelectPrinterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPrinterVC.swift; sourceTree = "<group>"; };
+		D81F31692644A42C00B27F0A /* ToDoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D81F3163264491A000B27F0A /* BrotherBSwift in Frameworks */,
+				D81F3161264491A000B27F0A /* BrotherB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +51,11 @@
 		D81F313D264490EB00B27F0A = {
 			isa = PBXGroup;
 			children = (
+				D81F315E2644918D00B27F0A /* BrotherB */,
+				D81F315D2644918C00B27F0A /* BrotherBSwift */,
 				D81F3148264490EB00B27F0A /* To-B-Do */,
 				D81F3147264490EB00B27F0A /* Products */,
+				D81F315F264491A000B27F0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +73,22 @@
 				D81F3149264490EB00B27F0A /* AppDelegate.swift */,
 				D81F314B264490EB00B27F0A /* SceneDelegate.swift */,
 				D81F314D264490EB00B27F0A /* ViewController.swift */,
+				D81F31672644927F00B27F0A /* SelectPrinterVC.swift */,
+				D81F31692644A42C00B27F0A /* ToDoView.xib */,
 				D81F314F264490EB00B27F0A /* Main.storyboard */,
 				D81F3152264490EF00B27F0A /* Assets.xcassets */,
 				D81F3154264490EF00B27F0A /* LaunchScreen.storyboard */,
 				D81F3157264490EF00B27F0A /* Info.plist */,
+				D81F3164264491B600B27F0A /* To-B-Do-Bridging-Header.h */,
 			);
 			path = "To-B-Do";
+			sourceTree = "<group>";
+		};
+		D81F315F264491A000B27F0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +107,10 @@
 			dependencies = (
 			);
 			name = "To-B-Do";
+			packageProductDependencies = (
+				D81F3160264491A000B27F0A /* BrotherB */,
+				D81F3162264491A000B27F0A /* BrotherBSwift */,
+			);
 			productName = "To-B-Do";
 			productReference = D81F3146264490EB00B27F0A /* To-B-Do.app */;
 			productType = "com.apple.product-type.application";
@@ -98,6 +126,7 @@
 				TargetAttributes = {
 					D81F3145264490EB00B27F0A = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -126,6 +155,7 @@
 			files = (
 				D81F3156264490EF00B27F0A /* LaunchScreen.storyboard in Resources */,
 				D81F3153264490EF00B27F0A /* Assets.xcassets in Resources */,
+				D81F316A2644A42C00B27F0A /* ToDoView.xib in Resources */,
 				D81F3151264490EB00B27F0A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D81F314E264490EB00B27F0A /* ViewController.swift in Sources */,
+				D81F31682644927F00B27F0A /* SelectPrinterVC.swift in Sources */,
 				D81F314A264490EB00B27F0A /* AppDelegate.swift in Sources */,
 				D81F314C264490EB00B27F0A /* SceneDelegate.swift in Sources */,
 			);
@@ -286,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2BY2NMR4CA;
 				INFOPLIST_FILE = "To-B-Do/Info.plist";
@@ -295,8 +327,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.epage.To-B-Do";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "To-B-Do/To-B-Do-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +339,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2BY2NMR4CA;
 				INFOPLIST_FILE = "To-B-Do/Info.plist";
@@ -314,8 +349,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.epage.To-B-Do";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "To-B-Do/To-B-Do-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -341,6 +377,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D81F3160264491A000B27F0A /* BrotherB */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BrotherB;
+		};
+		D81F3162264491A000B27F0A /* BrotherBSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BrotherBSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D81F313E264490EB00B27F0A /* Project object */;
 }
